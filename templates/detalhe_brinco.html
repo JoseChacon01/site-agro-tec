@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capa protetora</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+        <style type="text/css">
+    .efeito{
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .efeito:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+        </style>
+    </head>
+
+<body>
+    {% include './bases/menu.html' %}
+
+<main>
+    <!--detalhe do item-->
+    <div class="row mt-5">
+        <div class="col-12 col-lg-8">
+            <p class="text-center"><img src="{% static 'imagens/index/brinco.png' %}" alt="Identificador QR" width="400px" height="400px" class="efeito img-thumbnail"></p>
+            
+            <h3 class="text-center">Identificador QR</h3>
+            <p class="text-center">A tecnologia do campo que você precisa!</p>
+            <h3 class="text-center">R$ 2,50</h3>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="conta">
+                <section class="login">
+                    <form>
+                        <h3>Simular Frete:</h3>
+                        <p>
+                            <input type="text" placeholder="Digite seu CEP"> 
+                        </p>
+                            <button id="btentrar">Calcular frete</button>
+                        <p>
+                            <a href="#" id="esqueci">Não sei meu CEP</a> 
+                        </p><br>
+                     </form>    
+                        <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+                            <label><h3>Logomarca:</h3> <input type="file" name="image"></label> </form> <br>
+
+                            <p>
+                                <input type="text" placeholder="Quntidadde"> 
+                            </p>   
+                            <p>
+                                <input type="text" placeholder="Numero inicial"> 
+                            </p> 
+                       <p>   
+                        <button id="btentrar">Comprar</button>
+                      </p>  
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/> 
+
+  <div class="container espacom">
+    <div class="container espacom">
+    <div class=" row mt-4 espaco">
+     <h3>Descrição:</h3>
+            <p class="justifi">Brinco identificadorQR personalizado, anexe sua logomarca no campo abaixo e aguarde a avaliação de sonossos vendedores, 
+            que entrarão em contato com você em até 2 horas. Em caso de duvidadas, acesso o whatsApp para falar diretamnete conosco. 
+            A numeração será registrada de acordo com aquantidado de identificadores solicitados e o produtor podera escolher o numero i
+            nicial, os demais numeros serão preenchidos de forma sequencial, partindo na numeração escolhida. entrarão em contato com você
+             em até 2 horas. Em caso de duvidadas, acesso o whatsApp para falar diretamnete conosco. A numeração será registrada de acordo
+              com aquantidado de identificadores solicitados e o produtor podera escolher o numero inicial, os demais numeros serão
+               preenchidos de forma sequencial, partindo na numeração escolhida.</p>
+
+            <h5> ESPECIFICAÇÕES:</h5>
+            <li>Nome: Identificador QR</li>
+            <li>Fabricante: Agro Tec</li>
+            <li>Indicado para: Bovinos, suinos e caprinos</li>
+            <li>Material: Forte</li>
+            <li>Reutilização: Sim</li>
+            <li>Garantia do Fabricante: Contra defeitos de fabricação</li>
+    </div>
+   </div>
+  </div>
+
+  <br/>
+  <br/>
+  <br/> 
+
+  {% include './bases/rodape.html' %}
+</main>
+    <!--Java Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

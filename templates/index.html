@@ -1,0 +1,212 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    {% include './bases/menu.html' %}
+
+<main>
+  <div class="carousel slide">
+      <img src="{% static 'imagens/index/capa_index.png' %}" class="d-block w-100" height="550" alt="logo da Agro tec">
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="{% url 'produtos' %}"><img style="height: 180px; width: 180px;"
+          src="{% static 'imagens/index/brinco.png' %}"
+          class="cardio media-object  img-responsive img-fluid rounded-circle"></a>
+
+        <h4 class="nomesc">Identificador QR</h4>
+        <p class="descr justifi">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-success mx-auto" href="{% url 'produtos' %}">Saiba mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="{% url 'produtos' %}"><img style="height: 180px; width: 180px;"
+          src="{% static 'imagens/index/app_img.png' %}"
+          class="cardio media-object  img-responsive img-fluid rounded-circle"></a>
+
+        <h4 class="nomesc">Software de gestão</h2>
+        <p class="descr justifi">Another exciting gngjgjgjhhkhgk bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-success mx-auto" href="{% url 'produtos' %}">Saiba mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="{% url 'detalhes_capa' %}"><img style="height: 180px; width: 180px;"
+          src="{% static 'imagens/index/capa_protetora.png' %}"
+          class="cardio media-object  img-responsive img-fluid rounded-circle"></a>
+
+        <h4 class="nomesc">Capa protetora e impermeável</h2>
+        <p class="descr justifi">nhgmngdhhjhfmkghhjkjhkuyjhdg nfdndfndfngdf hngfjjhhgjhgjhgkghkgh gjdj ird column of representative placeholder content.</p>
+        <p><a class="btn btn-success mx-auto" href="{% url 'detalhes_capa' %}">Saiba mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+ <!-- NÃO FOI ATUALIZADO NADA EM VIEWS OU EM URLS, APENAS NESSA PAGINA (LINKS E IMAGENS), ATE AQUI!!!!-->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Não somos apenas uma empresa. <span class="text-muted">Somos a inovação e oportunidade.</span></h2>
+        <p class="lead justifi">Apoio ao pequeno e medio produtor rural, com tecnologias eficientes e comprovadas, aliadas com baixo e custo e qualidade. Alem de um suporte tecnologico e mentorias para auxiliar você a atingir as pespectivas da sua propriedade.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'imagens/index/img_1_index.png' %}" class="d-block w-100" width="500" height="500" alt="logo da Agro tec">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'imagens/index/img_agricultor_pecuaris.png' %}" class="d-block w-100" width="500" height="500" alt="Imagem de um agricultor e pecuarista">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'imagens/index/pecuaria_animais.png' %}" class="d-block w-100" width="500" height="500" alt="Bovinos, caprinos e suinos">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Transforme <span class="text-muted">sua propriedade um uma empresa.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'imagens/index/gestao_agro.png' %}" class="d-block w-100" width="500" height="500" alt="Gestão pecuaria">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container espaco">
+      <div class=" row mt-5 ">
+        <div class="col text-center">
+          <h1>Saiba mais sobre:</h1>
+        </div>
+      </div>
+
+      <div class="row  mt-3">
+        <div class="col-12 col-sm-6 col-lg-4 text-center">
+          <a href="#"><img style="height: 250px; width: 250px;"
+              src="{% static 'imagens/index/duvidas_f.png' %}" alt="Imagem link, duvidas frequentes"
+              class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
+          <h4>Duvidas Frequentes</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 text-center">
+          <a
+            href="#"><img style="height: 250px; width: 250px;" src="{% static 'imagens/index/localizacao.png' %}"
+              alt="Imagem que direciona a localização google da Agro Tec"
+              class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
+          <h4>Localização</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4  text-center">
+          <a href="#"><img style="height: 250px; width: 250px;" src="{% static 'imagens/index/suporte_c.png' %}"
+              alt="Suporte ao cliente, Agro Tec" class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
+          <h4>Suporte ao cliente</h4>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container espacom">
+      <div class=" row mt-4 espaco">
+        <h1>Conheça-nos um pouco mais:</h1>
+        <p class="justifi">Pode gestão a ser utilizado em uma plataforma mobile (celular) capaz de ler os brincos e realizar a contagem 
+          dos animais, acompanhar seu crescimento, quantidades e detalhes das crias, vacinas, nascimentos, gerar gráfico de engorda, monitorar rendimento da produção de leite, histórico de doenças, realizar o rastreamento através da geolocalização, registrar fotos do rebanho e da propriedade, entre outras funcionalidades.
+        </p>
+        <br>
+        <iframe width="853" height="450" src="https://www.youtube.com/embed/tg_9mOmzbXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container espacom">
+      <div class=" row mt-4 espaco">
+       <h1 class="green">Missão:</h1>
+       <p class="justifi">Aliar todas as qualidades dos outros modelos de brincos de controle de gestão animal, com o baixo custo e com novas funcionalidades;
+         Ao invés de bastões de leituras e equipamentos para realizar esse trabalho, o escâner seria realizado com próprio celular.
+         A leitura do chip com o celular possibilitara ler o numero do brinco e apresenta a contagem de animais, além de apresentar para o produtor quando um animal estiver faltando ao tentar finalizar o procedimento.
+         O software de gestão, além de todas as ferramentas para gestão dos animais como :  realizar a contagem dos animais, acompanhar seu crescimento, quantidades e detalhes das crias, vacinas, nascimentos, gerar gráfico de engorda, monitorar rendimento da produção de leite, histórico de doenças, registrar fotos do rebanho e da propriedade, além de gerar gráficos e relatórios sobre cada animal.
+         
+       </p>
+ 
+       <h1 class="green">Visão:</h1>
+       <p class="justifi">O software de gestão permitirá ao trabalhador rural se manter esclarecido sobre temas importantes como a forma e quantia correta de aplicar determinados medicamentos, formas de prevenção e tratamento das principais doenças que podem acometer o rebanho, entre outras funcionalidades.
+         Não será necessário a utilização dos dois brincos, apenas um que terá dupla função;
+         O brinco terá a logo marca do produtor, que servira como uma forma de ferra digital, que dispensara a ferra com fogo, que fere o couro do animal, podendo causar feridas graves.
+         Vale ressaltar que, o brinco pode ser utilizado tanto em bovinos, quanto caprinos e suínos;
+         o brinco poderá ser lido por qualquer outro criador ou interessado que terá acesso a várias informações do animal e
+          do produtor em uma plataforma de dados abertos, essa possibilidade proporciona uma maior segurança para o produtor, 
+          pois, caso o animal fuja para outra propriedade (prática comum na criação de cabras) outro produtor poderá escanear 
+          o QRcode e visualizar todos os dados públicos do animal e do produtor, do mesmo modo, ao adquirir um novo animal para
+           sua propriedade, que já possua esse modelo de brinco, será possível ter acesso ao histórico de vacinas e rendimento desse
+            animal na sua antiga propriedade, podendo tomar iniciativas ainda mais precisas. 
+       </p>
+ 
+       <h1 class="green">Valores:</h1>
+       <p class="justifi">Além de apresentar a localização do animal em casos de fuga, é possível acompanhar a
+          alimentação e hidratação do animal, saúde, período de cio de vacas e novilhas e visualizar as pastagens
+           que o animal frequentou, em casos de dúvidas se o animal foi até uma área que tenha tingui (Planta Tóxica
+            também conhecida por Timbó é responsável por causar Intoxicações em Bovinos), para assim utilizar o manejo 
+            correto, para que não exista acidentes ou perdas, por exemplo.
+       </p>
+ 
+ 
+      </div>
+    </div>  
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+
+ <!--link para o whats-->
+ <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5584988153780" target="_blank">
+  <!--instruirá o navegador a criar uma nova guia ou janela do navegador quando o usuário clicar no link.-->
+  <i class="fa fa-whatsapp"></i>
+</a>
+
+{% include './bases/rodape.html' %}
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>     
+  </body>
+</html>
